@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Strona internetowa firmy Forest Group Company Ltd. przedstawiająca logo firmy, ofertę oraz informacje związane z działalnością."
+		/>
+		<meta name="robots" content="index, follow" />
+
+		<title>Forest Website</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<nav class="menu" role="navigation" aria-label="Nawigacja">
+				<div class="logo menu__logo" role="logo">
+					<img
+						src="/src/img/black-pine-tree.svg"
+						alt="Ikona drzewa iglastego, choinki"
+						class="logo__image"
+					/>
+					<span class="logo__name">Forest</span>
+				</div>
+				<ul class="menu__item-list" role="list">
+					<li class="menu__item">
+						<a href="#home" class="menu__link choosen">Home</a>
+					</li>
+					<li class="menu__item">
+						<a href="#aboutus" class="menu__link">O nas</a>
+					</li>
+					<li class="menu__item">
+						<a href="#offers" class="menu__link">Oferta</a>
+					</li>
+					<li class="menu__item">
+						<a href="#contact" class="menu__link">Kontakt</a>
+					</li>
+				</ul>
+				<!-- hamburger menu -->
+				<a
+					href="javascript:void(0);"
+					class="hamburger-icon"
+					onclick="myFunction()"
+				>
+					<i class="fa fa-bars"
+						><img
+							src="/src/img/burger-menu-svgrepo-com.svg"
+							alt="Ikona nawigacji mobilnej"
+					/></i>
+				</a>
+			</nav>
+
+			<header id="home" class="header section">
+				<div class="hero-img">
+					<div class="hero-img__shadow"></div>
+					<img
+						src="/src/img/hero-img_640.jpg"
+						srcset="
+							/src/img/hero-img_640.jpg   230w,
+							/src/img/hero-img_1280.jpg  768w,
+							/src/img/hero-img_1920.jpg 1024w
+						"
+						alt="Głebokie drawniane schody idące w głąb. Barierki z obu stron drewniane obrośnięte mchem. Klimat lasu tropikalnego, dżungli."
+						class="hero-img__image"
+					/>
+					<div class="hero-img__content">
+						<h1 class="hero-img__title">Forest Group</h1>
+						<h2 class="hero-img__text">
+							Najpiękniejszy park w Twojej okolicy!
+						</h2>
+					</div>
+				</div>
+			</header>
+
+			<main class="main">
+				<section
+					id="aboutus"
+					class="aboutus wrapper--center section"
+					role="aboutus section"
+					aria-label="Informacja O nas"
+				>
+					<h3 class="main__title">O NAS</h3>
+					<div class="main__box-container">
+						<img
+							src="/src/img/aboutus-img_640.jpg"
+							alt="Skała pośrodku wody obrośnięta mchem, trawą i krzakiem. Dookoła las świerkowy. Wczesne lato."
+							class="aboutus__image"
+						/>
+						<div class="aboutus__article">
+							<h4 class="aboutus__article-title">Niezapomniane przygody</h4>
+							<p class="aboutus__article-text">
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+								Expedita sed, sequi corporis, cupiditate asperiores dolor,
+								obcaecati ex odio fugiat atque vel eum quae nihil voluptates qui
+								natus reprehenderit voluptate. Fuga. Cupiditate unde vel a quis
+								ipsam! Ex iste, quisquam expedita, laudantium, odio minima
+								cumque sed nemo culpa enim commodi totam aspernatur omnis. Eum
+								quibusdam tempora dolorum reprehenderit in, distinctio odit.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<div class="hero-img hero-img--center">
+					<div class="hero-img__shadow"></div>
+					<img
+						src="/src/img/girl_640.jpg"
+						srcset="/src/img/girl_640.jpg 230w, /src/img/girl_1920.jpg 1024w"
+						alt="Około 3 letnie dziecko idące w głąb ciemnego lasu w kaloszach i z placakiem przypominającym pszczołę."
+						class="hero-img__image"
+					/>
+					<p class="hero-img__text hero-img__text--center">
+						Przygoda dla całej rodziny
+					</p>
+				</div>
+
+				<section
+					id="offers"
+					class="offers wrapper--center section"
+					role="offers section"
+					aria-label="Oferty"
+				>
+					<h3 class="main__title">OFERTA</h3>
+					<p class="main__subtitle">
+						Wybierz jedną z naszych wspaniałych ofert!
+					</p>
+					<!-- offers__box-container -->
+					<div class="main__box-container">
+						<div class="offers__box" aria-describedby="Oferta Demo, 0$">
+							<p class="offers__box-title">Demo</p>
+							<p class="offers__box-price">$0</p>
+							<div class="offers__box-text">
+								<ul class="offers__box-list">
+									<li>
+										<p class="offers__box-text-offers">
+											<span class="offers__box-checked"> ✓ </span>opcja w
+											pakiecie
+										</p>
+									</li>
+									<li>
+										<p class="offers__box-text-offers">
+											<span class="offers__box-checked"> ✓ </span>opcja w
+											pakiecie
+										</p>
+									</li>
+									<li>
+										<p
+											class="offers__box-text-offers offers__box-minus--exclude"
+										>
+											<span class="offers__box-minus"> – </span>opcja poza
+											pakietem
+										</p>
+									</li>
+									<li>
+										<p
+											class="offers__box-text-offers offers__box-minus--exclude"
+										>
+											<span class="offers__box-minus"> – </span>opcja poza
+											pakietem
+										</p>
+									</li>
+									<li>
+										<p
+											class="offers__box-text-offers offers__box-minus--exclude"
+										>
+											<span class="offers__box-minus"> – </span>opcja poza
+											pakietem
+										</p>
+									</li>
+								</ul>
+							</div>
+							<button class="button" aria-label="Wybierz" role="button">
+								Wybierz
+							</button>
+						</div>
+						<div
+							class="offers__box offers__box--choosen"
+							aria-describedby="Oferta Standard, 99$, polecana przez firmę"
+						>
+							<p class="offers__box-title">Standard</p>
+							<p class="offers__box-price">$99</p>
+							<div class="offers__box-text">
+								<ul class="offers__box-list">
+									<li>
+										<p class="offers__box-text-offers">
+											<span class="offers__box-checked"> ✓ </span>opcja w
+											pakiecie
+										</p>
+									</li>
+									<li>
+										<p class="offers__box-text-offers">
+											<span class="offers__box-checked"> ✓ </span>opcja w
+											pakiecie
+										</p>
+									</li>
+									<li>
+										<p class="offers__box-text-offers">
+											<span class="offers__box-checked"> ✓ </span>opcja w
+											pakiecie
+										</p>
+									</li>
+									<li>
+										<p
+											class="offers__box-text-offers offers__box-minus--exclude"
+										>
+											<span class="offers__box-minus"> – </span>opcja poza
+											pakietem
+										</p>
+									</li>
+									<li>
+										<p
+											class="offers__box-text-offers offers__box-minus--exclude"
+										>
+											<span class="offers__box-minus"> – </span>opcja poza
+											pakietem
+										</p>
+									</li>
+								</ul>
+							</div>
+							<button
+								class="button button--selected"
+								aria-label="Wybierz, polecane"
+								role="button"
+							>
+								Wybierz
+							</button>
+						</div>
+						<div class="offers__box" aria-describedby="Oferta Premium, 299$">
+							<p class="offers__box-title">Premium</p>
+							<p class="offers__box-price">$299</p>
+							<div class="offers__box-text">
+								<ul class="offers__box-list">
+									<li>
+										<p class="offers__box-text-offers">
+											<span class="offers__box-checked"> ✓ </span>opcja w
+											pakiecie
+										</p>
+									</li>
+									<li>
+										<p class="offers__box-text-offers">
+											<span class="offers__box-checked"> ✓ </span>opcja w
+											pakiecie
+										</p>
+									</li>
+									<li>
+										<p class="offers__box-text-offers">
+											<span class="offers__box-checked"> ✓ </span>opcja w
+											pakiecie
+										</p>
+									</li>
+									<li>
+										<p class="offers__box-text-offers">
+											<span class="offers__box-checked"> ✓ </span>opcja w
+											pakiecie
+										</p>
+									</li>
+									<li>
+										<p class="offers__box-text-offers">
+											<span class="offers__box-checked"> ✓ </span>opcja w
+											pakiecie
+										</p>
+									</li>
+								</ul>
+							</div>
+							<button class="button" aria-label="Wybierz" role="button">
+								Wybierz
+							</button>
+						</div>
+					</div>
+				</section>
+
+				<div class="hero-img hero-img--center">
+					<div class="hero-img__shadow"></div>
+					<img
+						src="/src/img/magic_640.jpg"
+						srcset="/src/img/magic_640.jpg 230w, /src/img/magic_1920.jpg 1024w"
+						alt="Głebokie drawniane schody idące w głąb. Barierki z obu stron drewniane obrośnięte mchem. Klimat lasu tropikalnego, dżungli."
+						class="hero-img__image"
+					/>
+					<p class="hero-img__text hero-img__text--center">
+						Odkrywaj tajemnice z nami!
+					</p>
+				</div>
+
+				<section
+					id="contact"
+					class="contact wrapper--center section"
+					role="contact section"
+					aria-label="Kontakt"
+				>
+					<h3 class="main__title">KONTAKT</h3>
+					<p class="main__subtitle">Znajdź nas i bądźmy w kontakcie!</p>
+					<div class="main__box-container">
+						<div class="contact__box">
+							<form action="submit_form" method="post" class="contact__form">
+								<div class="contact__form-container">
+									<label for="imie" class="contact__form-label">Imię:</label>
+									<input
+										type="text"
+										id="imie"
+										name="imie"
+										placeholder="Imię"
+										class="contact__form-err contact__form-input"
+										required
+									/>
+								</div>
+								<div class="contact__form-container">
+									<label for="mail" class="contact__form-label"
+										>Adres e-mail:</label
+									>
+									<input
+										type="email"
+										id="mail"
+										name="mail"
+										placeholder="Adres e-mail"
+										class="contact__form-err contact__form-input"
+										required
+									/>
+								</div>
+								<div class="contact__form-container">
+									<label for="wiadomosc" class="contact__form-label"
+										>Wiadomość:</label
+									>
+									<textarea
+										id="wiadomosc"
+										name="wiadomosc"
+										placeholder="Wiadomość"
+										class="contact__form-err contact__form-textarea"
+										required
+									></textarea>
+								</div>
+								<button
+									type="submit"
+									class="button button--contact"
+									aria-label="Wybierz"
+									role="button"
+								>
+									Wyślij
+								</button>
+							</form>
+						</div>
+						<div class="contact__box contact__box--map-size">
+							<div class="contact__form-label">Lokalizacja</div>
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5119.7611268882665!2d19.892973000000012!3d50.088523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sMcDonald&#39;s!5e0!3m2!1sen!2spl!4v1708883196597!5m2!1sen!2spl"
+								width="100%"
+								height="450"
+								style="border: 0"
+								allowfullscreen=""
+								loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"
+								id="map"
+							></iframe>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer wrapper" role="footer" aria-label="Stopka">
+				<section class="footer__box-wrapper">
+					<div class="logo" role="logo">
+						<img
+							src="/src/img/black-pine-tree.svg"
+							alt=""
+							class="logo__image"
+						/>
+						<span class="logo__name">Forest</span>
+					</div>
+
+					<div class="footer__box-container" role="footercontainer">
+						<div
+							class="footer__box"
+							role="footeritem"
+							aria-label="Linki w stopce sekcja O nas"
+						>
+							<div class="footer__box-title">O nas</div>
+							<ul class="footer__box-list" role="list">
+								<li class="footer__box-item">
+									<a href="" class="footer__box-link" role="link">Historia</a>
+								</li>
+								<li class="footer__box-item">
+									<a href="" class="footer__box-link" role="link">Parki</a>
+								</li>
+								<li class="footer__box-item">
+									<a href="" class="footer__box-link" role="link">Opinie</a>
+								</li>
+							</ul>
+						</div>
+
+						<div
+							class="footer__box"
+							role="footeritem"
+							aria-label="Linki w stopce sekcja Nasza firma"
+						>
+							<div class="footer__box-title">Nasza firma</div>
+							<ul class="footer__box-list" role="list">
+								<li class="footer__box-item">
+									<a href="" class="footer__box-link" role="link">Praca</a>
+								</li>
+								<li class="footer__box-item">
+									<a href="" class="footer__box-link" role="link">Kadry</a>
+								</li>
+								<li class="footer__box-item">
+									<a href="" class="footer__box-link" role="link">Zarząd</a>
+								</li>
+							</ul>
+						</div>
+
+						<div
+							class="footer__box"
+							role="footeritem"
+							aria-label="Linki w stopce sekcja Dokumenty"
+						>
+							<div class="footer__box-title">Dokumenty</div>
+							<ul class="footer__box-list" role="list">
+								<li class="footer__box-item">
+									<a href="" class="footer__box-link" role="link">Wnioski</a>
+								</li>
+								<li class="footer__box-item">
+									<a href="" class="footer__box-link" role="link">Rezerwacje</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<div class="footer__copyright" role="contentinfo">
+					<p>&copy;<span class="year"></span> Forest Group Company Ltd.</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+
+	<script src="/js/main.js"></script>
+	<script src="/js/scrollspy.js"></script>
+	<script src="/js/navigation.js"></script>
+	<script src="https://unpkg.com/@sidsbrmnn/scrollspy@1.x/dist/scrollspy.min.js"></script>
+</html>
