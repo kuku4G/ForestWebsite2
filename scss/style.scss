@@ -53,6 +53,7 @@ body {
 	padding: 0.5em 2em;
 	font-size: $textFontSize;
 	font-family: 'Raleway';
+	color: $textColor;
 	@include shadowCards;
 	border: none;
 	background-color: transparent;
@@ -468,12 +469,5 @@ body {
 		&-text {
 			text-align: center;
 		}
-	}
-	.offers__box {
-		order: -1;
-	}
-
-	.offers__box--choosen {
-		order: 1;
 	}
 }
