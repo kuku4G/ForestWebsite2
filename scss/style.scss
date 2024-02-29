@@ -77,7 +77,6 @@ body {
 .menu {
 	position: sticky;
 	top: 0;
-	// margin: 0 auto;
 	z-index: 1;
 	//wygląd
 	width: 100%;
@@ -96,7 +95,7 @@ body {
 		width: 100%;
 		top: 7.5em;
 	}
-
+	
 	&__item {
 		list-style: none;
 	}
@@ -108,7 +107,7 @@ body {
 		font-size: $textFontSize;
 		color: $textColor;
 		background-color: $backgroundColor;
-
+		
 		&:hover,
 		&:focus {
 			@include hoverNavigation;
@@ -145,6 +144,11 @@ body {
 		right: 0;
 		top: 0;
 		padding: 2em;
+	}
+
+	.menu__link {
+		background-color: #acd0e0f8;
+		text-align: center;
 	}
 }
 
@@ -338,7 +342,7 @@ body {
 		font-size: $textFontSize;
 		text-transform: uppercase;
 		padding: 1em;
-		margin: 1em 0;
+		margin: 1em;
 		width: 100%;
 		transition: transform 0.5s;
 
