@@ -50,6 +50,7 @@ body {
 .shimmering {
 	background: linear-gradient(-60deg, #ffffff, #ababab, #ffffff);
 	background-size: 200% 200%;
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	animation: shimmer 5s infinite;
