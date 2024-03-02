@@ -61,8 +61,8 @@
 						class="hero-img__image"
 					/>
 					<div class="hero-img__content">
-						<h1 class="hero-img__title">Forest Group</h1>
-						<h2 class="hero-img__text">
+						<h1 class="hero-img__title shimmering">Forest Group</h1>
+						<h2 class="hero-img__text shimmering">
 							Najpiękniejszy park w Twojej okolicy!
 						</h2>
 					</div>
@@ -106,7 +106,7 @@
 						alt="Około 3 letnie dziecko idące w głąb ciemnego lasu w kaloszach i z placakiem przypominającym pszczołę."
 						class="hero-img__image"
 					/>
-					<p class="hero-img__text hero-img__text--center">
+					<p class="hero-img__text hero-img__text--center shimmering">
 						Przygoda dla całej rodziny
 					</p>
 				</div>
@@ -123,7 +123,7 @@
 					</p>
 					<!-- offers__box-container -->
 					<div class="main__box-container">
-						<div class="offers__box" aria-describedby="Oferta Demo, 0$">
+						<div class="offers__box hidden" aria-describedby="Oferta Demo, 0$">
 							<p class="offers__box-title">Demo</p>
 							<p class="offers__box-price">$0</p>
 							<div class="offers__box-text">
@@ -171,7 +171,7 @@
 							</button>
 						</div>
 						<div
-							class="offers__box offers__box--choosen"
+							class="offers__box offers__box--choosen hidden"
 							aria-describedby="Oferta Standard, 99$, polecana przez firmę"
 						>
 							<p class="offers__box-title">Standard</p>
@@ -222,7 +222,7 @@
 								Wybierz
 							</button>
 						</div>
-						<div class="offers__box" aria-describedby="Oferta Premium, 299$">
+						<div class="offers__box hidden" aria-describedby="Oferta Premium, 299$">
 							<p class="offers__box-title">Premium</p>
 							<p class="offers__box-price">$299</p>
 							<div class="offers__box-text">
@@ -277,7 +277,7 @@
 						alt="Głebokie drawniane schody idące w głąb. Barierki z obu stron drewniane obrośnięte mchem. Klimat lasu tropikalnego, dżungli."
 						class="hero-img__image"
 					/>
-					<p class="hero-img__text hero-img__text--center">
+					<p class="hero-img__text hero-img__text--center shimmering">
 						Odkrywaj tajemnice z nami!
 					</p>
 				</div>
@@ -291,7 +291,7 @@
 					<h3 class="main__title">KONTAKT</h3>
 					<p class="main__subtitle">Znajdź nas i bądźmy w kontakcie!</p>
 					<div class="main__box-container">
-						<div class="contact__box">
+						<div class="contact__box hidden">
 							<form action="submit_form" method="post" class="contact__form">
 								<div class="contact__form-container">
 									<label for="imie" class="contact__form-label">Imię:</label>
@@ -339,7 +339,7 @@
 								</button>
 							</form>
 						</div>
-						<div class="contact__box contact__box--map-size">
+						<div class="contact__box contact__box--map-size hidden">
 							<div class="contact__form-label">Lokalizacja</div>
 							<iframe
 								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5119.7611268882665!2d19.892973000000012!3d50.088523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sMcDonald&#39;s!5e0!3m2!1sen!2spl!4v1708883196597!5m2!1sen!2spl"
@@ -430,8 +430,6 @@
 		</div>
 	</body>
 
-	<script src="./js/main.js"></script>
-	<script src="./js/scrollspy.js"></script>
-	<script src="./js/navigation.js"></script>
+	<script src="./js/main.js" type="module"></script>
 	<script src="https://unpkg.com/@sidsbrmnn/scrollspy@1.x/dist/scrollspy.min.js"></script>
 </html>

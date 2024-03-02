@@ -1,44 +1,13 @@
-// function myFunction() {
-//     let clickOnBtn = document.querySelectorAll('.menu__item');
-//     let x = document.querySelector('.menu__item-list');
-//     if (x.style.display === 'block') {
-//         x.style.display = 'none';
-//     } else {
-//         x.style.display = 'block';
-//     }
-
-//     //obsługa kliknięcia myszy
-//     clickOnBtn.forEach(item => {
-//         item.addEventListener('click', () => {
-//             x.style.display = 'none';
-//         })
-//     })
-
-//     //obsługa dotyku na urządzeniach mobilnych
-//     clickOnBtn.forEach(item => {
-//         item.addEventListener('touchstart', () => {
-//             x.style.display = 'none';
-//         });
-//     });
-// // do HTML
-// // onclick="myFunction()"
-// // 					ontouchstart="myFunction()"
-// }
-
-const nav = document.querySelector('.menu');
 const hamburgerBtn = document.querySelector('.hamburger-icon');
 const navItemList = document.querySelector('.menu__item-list');
-const navItem = document.querySelectorAll('.menu__link')
+const navItem = document.querySelectorAll('.menu__link');
+let mediaQuery = window.matchMedia("(min-width: 768px)");
 
-const handleNav = () => {
-	// nav.classList.toggle('menu--active');
-	// console.log(nav);
-
-	// hamburgerBtn.style.display = 'block';
-
+ export const handleNav = () => {
 	hamburgerBtn.addEventListener('click', () => {
 		if (navItemList.style.display === 'block') {
 			navItemList.style.display = 'none';
+			handleMediaQueryChange(mediaQuery);
 		} else {
 			navItemList.style.display = 'block';
 
@@ -49,6 +18,20 @@ const handleNav = () => {
 			})
 		}
 	});
+
+	function handleMediaQueryChange(mediaQuery) {
+        if (mediaQuery.matches) {
+            // Warunek media query jest spełniony (szerokość ekranu większa niż 768px)
+			navItemList.style.display = 'flex';
+        } else {
+            // Warunek media query nie jest spełniony (szerokość ekranu mniejsza niż 768px)
+			navItemList.style.display = 'none';
+        }
+    }
+	// Dodanie nasłuchiwania zmian w warunku media query
+	mediaQuery.addListener(handleMediaQueryChange);
+
 };
 
-handleNav();
+// handleNav();
+

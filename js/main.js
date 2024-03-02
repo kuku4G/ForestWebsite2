@@ -1,8 +1,7 @@
-const footerYear = document.querySelector('.year')
+import { handleCurrentYear } from "./handleYear.js";
+import { handleNav } from "./navigation.js";
+import { cardAnimation } from "./scrollspy.js";
 
-const handleCurrentYear = () => {
-    const year = (new Date).getFullYear();
-    footerYear.innerHTML = year
-}
-
-handleCurrentYear()
+handleCurrentYear();
+cardAnimation();
+handleNav();

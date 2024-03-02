@@ -1,20 +1,5 @@
-//zmienne
-$heroFontColor: #fff;
-$backgroundColor: #fff;
-$logoFontSize: 4.8rem;
-$titleFontSize: 4.2rem;
-$subtitleFontSize: 2.8rem;
-$textFontSize: 2.1rem;
-$textFontSizeMobile: 1.8rem;
-$inputFontSize: 1.8rem;
-$footerlinkFontSize: 1.6rem;
-$heroFontSizeH1: 3.2rem;
-$heroFontSizeH2: 4.2rem;
-$heroFontSizeMobile: 2.8rem;
-$buttonColor: #2ade72;
-$textColor: #1f1f1f;
-
-//import mixin
+//import plików scss
+@import './variables.scss';
 @import './mixin.scss';
 @import './fonts.scss';
 
@@ -48,6 +33,36 @@ body {
 	}
 }
 
+.hidden {
+	opacity: 0;
+	filter: blur(5px);
+	transform: translateX(-100%);
+	transition: all 1s;
+}
+
+.show {
+	opacity: 1;
+	filter: blur(0);
+	transform: translateX(0);
+	transition: all 2s ease;
+}
+
+.shimmering {
+	background: linear-gradient(-60deg, #ffffff, #ababab, #ffffff);
+	background-size: 200% 200%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: shimmer 5s infinite;
+}
+@keyframes shimmer {
+    0% {
+        background-position-x: 150%;
+    }
+    100% {
+        background-position-x: -150%;
+    }
+}
+
 .button {
 	margin: 2em 4em;
 	padding: 0.5em 2em;
@@ -79,7 +94,6 @@ body {
 	top: 0;
 	z-index: 1;
 	//wygląd
-	width: 100%;
 	background-color: $backgroundColor;
 
 	&__logo {
@@ -95,7 +109,7 @@ body {
 		width: 100%;
 		top: 7.5em;
 	}
-	
+
 	&__item {
 		list-style: none;
 	}
@@ -107,7 +121,7 @@ body {
 		font-size: $textFontSize;
 		color: $textColor;
 		background-color: $backgroundColor;
-		
+
 		&:hover,
 		&:focus {
 			@include hoverNavigation;
@@ -147,7 +161,9 @@ body {
 	}
 
 	.menu__link {
-		background-color: #acd0e0f8;
+		background-color: #1f1f1f;
+		color: $heroFontColor;
+		border: 0.5px solid $heroFontColor;
 		text-align: center;
 	}
 }
@@ -186,8 +202,7 @@ body {
 
 	&__shadow {
 		position: absolute;
-		width: 100%;
-		height: 100%;
+		inset: 0;
 		background-color: rgba(0, 0, 0, 0.7);
 	}
 
